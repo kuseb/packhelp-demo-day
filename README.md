@@ -1,24 +1,23 @@
-# README
+# API Documentation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. GET /api/offers
+Response: 
+{
+    "offers": [
+        {
+            
+        }
+    ]
+},
+status: 200/401/403/500
 
-Things you may want to cover:
+2. GET /api/offers/:id
+Response:
+{
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+}, 
+status: 200/401/403/500
+3. POST /api/offers/:id/accept
+Response: '', status: 200/401/403/500
+4. POST /api/offets/:id/reject
+Response: '', status: 200/401/403/500
